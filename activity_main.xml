@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ChattingActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginStart="20dp"
+           android:layout_centerVertical="true"
+           android:background="@drawable/round_back_light_10"
+           android:padding="6dp"
+           android:src="@drawable/search_icon"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18dp"
+           android:textStyle="bold"
+           android:text="Message"
+           android:textColor="#424242"
+           android:layout_centerInParent="true"/>
+
+       <ImageView
+           android:id="@+id/userProfilePic"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginEnd="20dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true"
+           android:src="@drawable/profileimage"/>
+
+
+<!--       <de.hdodenhof.circleimageview.CircleImageView-->
+<!--           android:id="@+id/imageView"-->
+<!--           android:layout_width="35dp"-->
+<!--           android:layout_height="35dp"-->
+<!--           android:layout_marginStart="20dp"-->
+<!--           android:layout_marginTop="30dp"-->
+<!--           android:layout_marginEnd="16dp"-->
+<!--           android:src="@drawable/profileimage"-->
+<!--           app:civ_border_width="2dp"-->
+<!--           app:layout_constraintBottom_toBottomOf="parent"-->
+<!--           app:layout_constraintEnd_toEndOf="parent"-->
+<!--           app:layout_constraintHorizontal_bias="0.498"-->
+<!--           app:layout_constraintStart_toStartOf="parent"-->
+<!--           app:layout_constraintTop_toTopOf="parent"-->
+<!--           app:layout_constraintVertical_bias="0.189">-->
+
+<!--       </de.hdodenhof.circleimageview.CircleImageView>-->
+
+
+   </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
